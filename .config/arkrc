@@ -1,0 +1,11 @@
+[ExtractDialog]
+2 screens: Window-Maximized=true
+DirHistory[$e]=$HOME/Downloads/,$HOME/.local/share/Steam/steamapps/common/Deadlock/game/citadel/addons/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+defaultOpenAction=Open
+
+[MainWindow]
+StatusBar=Disabled

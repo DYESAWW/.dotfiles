@@ -1,0 +1,47 @@
+[FullScreen]
+FullScreenBarHeight=80
+
+[General]
+FullScreenBackground=FullScreenBackground::Image
+LastUsedVersion=210800
+
+[ImageView]
+AlphaBackgroundMode=AbstractImageView::AlphaBackgroundCheckBoard
+AnimationMethod=DocumentView::GLAnimation
+ThumbnailSplitterSizes=1061,265
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-yqe51l.png
+File10[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-rq6151.jpg
+File2[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-k8d11q.png
+File3[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-e83v5l.png
+File4[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-1q223g.jpg
+File5[$e]=$HOME/Pictures/wallpapers/favorite/140425297_p0_master1200.jpg
+File6[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-w5x2vr.jpg
+File7[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-5y3qv7.jpg
+File8[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-5y33j5.jpg
+File9[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-k8dv6q.jpg
+Name1[$e]=wallhaven-yqe51l.png
+Name10[$e]=wallhaven-rq6151.jpg
+Name2[$e]=wallhaven-k8d11q.png
+Name3[$e]=wallhaven-e83v5l.png
+Name4[$e]=wallhaven-1q223g.jpg
+Name5[$e]=140425297_p0_master1200.jpg
+Name6[$e]=wallhaven-w5x2vr.jpg
+Name7[$e]=wallhaven-5y3qv7.jpg
+Name8[$e]=wallhaven-5y33j5.jpg
+Name9[$e]=wallhaven-k8dv6q.jpg
+
+[SideBar]
+InformationSplitterSizes=219,256
+IsVisible ViewMode=true
+SideBarSplitterSizes=150,469
+
+[UiSettings]
+ColorScheme=CatppuccinMochaMauve
+
+[slide show]
+random=true

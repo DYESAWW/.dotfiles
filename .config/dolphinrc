@@ -1,0 +1,54 @@
+MenuBar=Disabled
+
+[CompactMode]
+PreviewSize=22
+UseSystemFont=false
+ViewFont=Rubik,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[ContentDisplay]
+DirectorySizeMode=ContentSize
+
+[DetailsMode]
+PreviewSize=22
+UseSystemFont=false
+ViewFont=Rubik,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+
+[General]
+DoubleClickViewAction=none
+EditableUrl=true
+GlobalViewProps=false
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowStatusBar=FullWidth
+Version=202
+ViewPropsTimestamp=2026,8,2,12,5,30.25
+
+[IconsMode]
+IconSize=48
+MaximumTextLines=4
+PreviewSize=48
+UseSystemFont=false
+ViewFont=Rubik,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+
+[InformationPanel]
+dateFormat=ShortFormat
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[Notification Messages]
+ConfirmRenameFileType=false
+warnAboutRisksBeforeActingAsAdmin=false
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+
+[Search]
+Location=Everywhere
+
+[UiSettings]
+ColorScheme=CatppuccinMochaMauve

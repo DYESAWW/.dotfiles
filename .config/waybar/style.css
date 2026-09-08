@@ -1,0 +1,131 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    border-radius: 14px;
+    font-family: "Rubik";
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 0;
+    margin: 0px 4px;
+    padding: 0px 0px;
+}
+
+p {
+    font-size: 32px
+}
+
+tooltip {
+    background-color: @bg;
+    border-radius: 15px;
+    color: @fg;
+    border: 2px solid @border;
+}
+
+window#waybar {
+    background: transparent;
+    border-radius: 30px;
+    padding-top: 2px;
+    color: @fg;
+}
+
+tooltip label {
+  color: @fg;
+  border-radius: 15px;
+  padding: 2px 8px;
+}
+
+.modules-left {
+    background: @bg;
+    margin: 5px 0px;
+    border-radius: 15px;
+}
+
+.modules-center {
+    background: @bg;
+    margin: 5px 0px;
+    border-radius: 15px;
+}
+
+.modules-right {
+    background: @bg;
+    margin: 5px 0px;
+    border-radius: 15px;
+}
+
+#workspaces {
+    padding: 0px 2px;
+    padding-top: 1px;
+    background: @bg;
+    border-radius: 30px;
+    margin: 3px 2px;
+}
+
+#workspaces button {
+    padding: 0px 0px;
+    background: transparent;
+    font-size: 16px;
+    color: @fg;
+    border-bottom: 0px solid transparent;
+    margin: 0px -3px;
+    color: @border;
+}
+
+#clock {
+    padding: 0px 9px;
+    color: @fg;
+    background: transparent;
+    border-radius: 30px;
+    margin: 3px 4px;
+}
+
+#battery {
+    padding: 0px 9px;
+    background: transparent;
+    border-radius: 30px;
+    margin: 3px 4px;
+}
+
+#wireplumber {
+    padding: 0px 10px;
+    background: transparent;
+    border-radius: 30px;
+    margin: 3px 4px;
+    font-size: 28px;
+}
+
+#custom-power {
+    font-size: 19px;
+    padding: 0px 9px;
+    background: transparent;
+    border-radius: 30px;
+    margin: 3px 4px;
+}
+
+#network {
+    font-size: 14px;
+    padding: 0px 9px;
+    background: transparent;
+    border-radius: 30px;
+    margin: 3px 4px;
+}
+
+#mpris {
+    font-size: 15px;
+    padding-right: 9px;
+    background: transparent;
+    color: @fg;
+    border-radius: 30px;
+    margin: 3px 4px;
+}
+
+#custom-arch-logo {
+    font-size: 32px;
+    color: #89b4fa;
+}
+
+#cava {
+    font-family: monospace;
+    color: @bg;
+    margin: 0 5px;
+}

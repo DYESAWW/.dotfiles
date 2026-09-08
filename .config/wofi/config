@@ -1,0 +1,11 @@
+width=700
+height=450
+location=center
+mode=drun
+allow_images=true
+show_all=true
+print_command=true
+insensitive=true
+term=kitty
+hide_scroll=true
+normal_window=true

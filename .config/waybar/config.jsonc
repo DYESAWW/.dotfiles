@@ -1,0 +1,132 @@
+{
+    "layer": "top",
+    "margin-top": 0,
+    "margin-right": 10,
+    "margin-bottom": -5,
+    "margin-left": 10,
+    "modules-left": [
+        "custom/arch-logo",
+        "hyprland/workspaces",
+        "album",
+        "image",
+	    "mpris"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "wireplumber#output",
+        "wireplumber#input",
+        "hyprland/language",
+        "bluetooth",
+        "cpu",
+        "network",
+        "custom/swaync",
+        "custom/power"
+    ],
+    "clock": {
+        "format": "{:%B %d ; %H:%M:%S}",
+        "tooltip": false,
+        "interval": 1
+    },
+        "wireplumber#input": {
+        "format-source": "<big></big>",
+        "format-source-muted": "<big></big>",
+        "format": "{format_source}",
+        "tooltip-format": "{source_volume}%",
+        "scroll-step": 1,
+        "smooth-scrolling-threshold": 1,
+        "max-volume": 100,
+        "on-click": "pwvucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%-"
+    },
+    "wireplumber#output": {
+        "format": "{icon}",
+        "tooltip-format": "{volume}%",
+         "format-muted": "<big></big>",
+            "format-icons": {
+            "default": ["<big></big>", "<big></big>", "<big></big>"]
+        },
+        "max-volume": 100,
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 1,
+        "on-click": "pwvucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "*": 5
+        },
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "active": "<big></big>",
+            "default": "<big></big>"
+        },
+        "sort-by-number": true
+    },
+    "bluetooth": {
+        "format": "<big>󰂯</big>  [{status}]",
+        "format-connected": "󰂯 {num_connections}   ",
+        "on-click": "blueberry",
+        "on-click-right": "bluetoothctl power $(bluetoothctl show | grep Powered | grep -q \"yes\" && echo off || echo on)",
+        "tooltip-format": "{status}",
+        "tooltip-format-connected": "{device_alias}\n{status}",
+        "tooltip-format-enumerate-connected": "{device_alias}"
+    },
+    "custom/swaync": {
+        "format": "<big><big></big></big>",
+        "on-click": "swaync-client -t",
+        "on-click-right": "swaync-client -d",
+        "tooltip": false
+    },
+    "custom/power": {
+        "format": "<big>⏻</big>",
+        "on-click": "wleave"
+    },
+    "custom/arch-logo": {
+        "format": " <big></big> ",
+        "tooltip": false
+    },
+    "network": {
+        "interface": "enp10s0",
+        "interval": 2,
+        "format": "<big>↓</big> {bandwidthDownBytes}  <big>↑</big> {bandwidthUpBytes}",
+        "format-ethernet": "<big>↓</big> {bandwidthDownBytes}  <big>↑</big> {bandwidthUpBytes}",
+        "format-disconnected": "",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format-ethernet": "{ifname} via {gwaddr}\n↓ {bandwidthDownBytes}\n↑ {bandwidthUpBytes}",
+        "tooltip-format-disconnected": "Disconnected"
+    },
+    "cpu": {
+        "interval": 2,
+        "format": " <big>{icon}</big> {usage}%",
+        "format-icons": "<big></big>",
+        "tooltip-format": "{usage}%\ntemp: {icon}{max_frequency}°C"
+    },
+    "mpris": {
+        "format": "{player_icon}  ⋮ {title} ; {artist} ⋮",
+        "format-paused":"{status_icon}  ⋮ {title} ; {artist} ⋮ ",
+        "max-length": 50,
+        "player": "spotify",
+        "player-icons": {
+            "default": "⏸"
+        },
+        "status-icons": {
+            "paused": "<small>▶</small>"
+        }
+    },
+    "image": {
+        "exec": "~/scripts/album-cover.sh",
+        "size": 38,
+        "interval": 1
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "en ",
+        "format-ru": "ru ",
+        "format-et": "ee "
+    }
+}
