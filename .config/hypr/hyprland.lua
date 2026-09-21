@@ -39,6 +39,7 @@ local menu        = "noctalia msg panel-toggle launcher"
 hl.on("hyprland.start", function ()
 --    hl.exec_cmd("ddcutil setvcp D6 01 -d 1")
     hl.exec_cmd("hypridle")
+    hl.exec_cmd("wayscriber --daemon --freeze-on-show")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("copyq --start-server")
     hl.exec_cmd("hyprpaper")
@@ -137,6 +138,7 @@ hl.config({
             size      = 3,
             passes    = 1,
             vibrancy  = 0.1696,
+            new_optimizations = true,
         },
     },
 
@@ -276,6 +278,7 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("copyq show"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zen-beta --blank-window"))
 -- hl.bind("Print", hl.dsp.exec_cmd("grimblast --notify copysave area ~/Pictures/Screenshots/$(date +%Y%m%d-%H%M%S).png"))
 hl.bind("Print", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("noctalia msg screenshot-annotate"))
 hl.bind(mainMod .. " + F1", hl.dsp.exec_cmd("obs-cmd replay save && notify-send 'OBS Replay has been saved!'"))
 
 -- noctalia

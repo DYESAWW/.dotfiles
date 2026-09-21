@@ -14,31 +14,31 @@ ThumbnailSplitterSizes=1061,265
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-yqe51l.png
-File10[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-rq6151.jpg
-File2[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-k8d11q.png
-File3[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-e83v5l.png
-File4[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-1q223g.jpg
-File5[$e]=$HOME/Pictures/wallpapers/favorite/140425297_p0_master1200.jpg
-File6[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-w5x2vr.jpg
-File7[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-5y3qv7.jpg
-File8[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-5y33j5.jpg
-File9[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-k8dv6q.jpg
-Name1[$e]=wallhaven-yqe51l.png
-Name10[$e]=wallhaven-rq6151.jpg
-Name2[$e]=wallhaven-k8d11q.png
-Name3[$e]=wallhaven-e83v5l.png
-Name4[$e]=wallhaven-1q223g.jpg
-Name5[$e]=140425297_p0_master1200.jpg
-Name6[$e]=wallhaven-w5x2vr.jpg
-Name7[$e]=wallhaven-5y3qv7.jpg
-Name8[$e]=wallhaven-5y33j5.jpg
-Name9[$e]=wallhaven-k8dv6q.jpg
+File1[$e]=/mnt/1/Favorites/moloko/dzankomi/photo_2026-08-29_20-17-04 (6).jpg
+File10[$e]=$HOME/Pictures/Screenshots/20260921-183213-region.png
+File2[$e]=$HOME/Pictures/_DSC0942.JPG
+File3[$e]=$HOME/Pictures/zmeya.png
+File4[$e]=/mnt/1/Favorites/Hannah/2022 Onlyfans/august/2022-08-04 Sextape/2022-08-04_2080x1170_d8d1ee6edf75729dd8ea8586aa9438b6.jpg
+File5[$e]=kdeconnect://3e00f581_ba68_40dd_a524_9e8a286031a1/Internal storage/DCIM/Camera/20260920_162313.jpg
+File6[$e]=kdeconnect://3e00f581_ba68_40dd_a524_9e8a286031a1/Internal storage/DCIM/Screenshots/Screenshot_20260920_215550_Calendar.png
+File7[$e]=$HOME/Pictures/temp/Screenshot_20260920_215528_Calendar.png
+File8[$e]=$HOME/Pictures/temp/Screenshot_20260920_215550_Calendar.png
+File9[$e]=$HOME/Pictures/temp/Screenshot_20260920_215545_Calendar.png
+Name1[$e]=photo_2026-08-29_20-17-04 (6).jpg
+Name10[$e]=20260921-183213-region.png
+Name2[$e]=_DSC0942.JPG
+Name3[$e]=zmeya.png
+Name4[$e]=2022-08-04_2080x1170_d8d1ee6edf75729dd8ea8586aa9438b6.jpg
+Name5[$e]=20260920_162313.jpg
+Name6[$e]=Screenshot_20260920_215550_Calendar.png
+Name7[$e]=Screenshot_20260920_215528_Calendar.png
+Name8[$e]=Screenshot_20260920_215550_Calendar.png
+Name9[$e]=Screenshot_20260920_215545_Calendar.png
 
 [SideBar]
-InformationSplitterSizes=219,256
+InformationSplitterSizes=602,708
 IsVisible ViewMode=true
-SideBarSplitterSizes=150,469
+SideBarSplitterSizes=150,1104
 
 [UiSettings]
 ColorScheme=CatppuccinMochaMauve
