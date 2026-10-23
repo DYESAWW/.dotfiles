@@ -5,6 +5,20 @@ hl.monitor({
     scale = 1,
     bitdepth = 10,
     vrr = 1,
+    sdrbrightness = 1.2,
+    sdrsaturation = 1.0,
+
+    sdr_min_luminance = 0.2,
+    sdr_max_luminance = 400,
+    min_luminance     = 0,
+    max_luminance     = 600,
+    max_avg_luminance = 350,
+    
+})
+
+hl.config({
+  cursor = { no_hardware_cursors = 1},
+  render = { cm_sdr_eotf = 1, cm_auto_hdr = 1 },
 })
 
 hl.monitor({
