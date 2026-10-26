@@ -1,3 +1,6 @@
+[audio]
+enable_sounds = false
+
 [bar.default]
 background_opacity = 0.0
 capsule = true
@@ -118,11 +121,13 @@ pre_action_fade_seconds = 3
     timeout = 120.0
 
 [location]
-address = "Tallinn"
+address = "Tartu"
 
 [lockscreen]
 blur_intensity = 0.0
 tint_intensity = 0.0
+transition = [ "zoom" ]
+transition_duration = 1000
 
 [lockscreen_widgets]
 enabled = true
@@ -379,6 +384,8 @@ monitors = [ "DP-1" ]
     media = false
 
 [plugin_settings."avivbintangaringga/nix-monitor"]
+clean_command = "sudo nix-collect-garbage -d"
+optimize_command = "sudo nix-store --optimise -vv"
 panel_card_color = "surface"
 panel_card_opacity = 100
 panel_placement = "floating"
@@ -408,7 +415,8 @@ password_style = "random"
 polkit_agent = true
 popup_shadows = false
 screen_time_enabled = true
-time_format = "{:%H:%M%S}"
+settings_window_translucent = true
+time_format = "{:%H:%M:%S}"
 
     [shell.animation]
     speed = 1.1000000163912773
@@ -416,8 +424,13 @@ time_format = "{:%H:%M%S}"
     [shell.greeter_sync]
     privilege_command = "pkexec"
 
-    [shell.launcher.providers.emoji]
-    global = false
+    [shell.launcher]
+    categories = false
+    category_icons_only = true
+    layout = "simple"
+
+        [shell.launcher.providers.emoji]
+        global = false
 
     [shell.panel]
     control_center_placement = "floating"
@@ -503,13 +516,13 @@ transition_on_startup = true
     recursive = false
 
     [wallpaper.default]
-    path = "/home/DYESAW/Pictures/wallpapers/favorite/wallhaven-e8ed5w.jpg"
+    path = "/home/DYESAW/Pictures/wallpapers/favorite/wallhaven-e83v5l.png"
 
     [wallpaper.last]
-    path = "/home/DYESAW/Pictures/wallpapers/favorite/wallhaven-e8ed5w.jpg"
+    path = "/home/DYESAW/Pictures/wallpapers/favorite/wallhaven-e83v5l.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/DYESAW/Pictures/wallpapers/favorite/wallhaven-e8ed5w.jpg"
+    path = "/home/DYESAW/Pictures/wallpapers/favorite/wallhaven-e83v5l.png"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/DYESAW/Pictures/wallpapers/favorite/wallhaven-og18rl.png"

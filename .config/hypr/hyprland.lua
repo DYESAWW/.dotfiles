@@ -24,7 +24,8 @@ require("workspaces")
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu        = "noctalia msg panel-toggle launcher"
+--local menu        = "noctalia msg panel-toggle launcher"
+local menu        = "dms ipc call launcher toggle"
 
 
 -------------------
@@ -133,7 +134,7 @@ hl.config({
 
         blur = {
             enabled   = true,
-            size      = 3,
+            size      = 4,
             passes    = 1,
             vibrancy  = 0.1696,
             new_optimizations = true,
@@ -274,15 +275,18 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("copyq show"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zen-beta --blank-window"))
--- hl.bind("Print", hl.dsp.exec_cmd("grimblast --notify copysave area ~/Pictures/Screenshots/$(date +%Y%m%d-%H%M%S).png"))
-hl.bind("Print", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("noctalia msg screenshot-annotate"))
+hl.bind("Print", hl.dsp.exec_cmd("grimblast --notify --freeze copysave area ~/Pictures/Screenshots/$(date +%Y%m%d-%H%M%S).png"))
+--hl.bind("Print", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
+--hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("noctalia msg screenshot-annotate"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("wayscriber --daemon-toggle"))
 hl.bind(mainMod .. " + F1", hl.dsp.exec_cmd("obs-cmd replay save && notify-send 'OBS Replay has been saved!'"))
 
 -- noctalia
-hl.bind("XF86PowerOff", hl.dsp.exec_cmd("noctalia msg panel-open session"))
+--hl.bind("XF86PowerOff", hl.dsp.exec_cmd("noctalia msg panel-open session edit"))
+hl.bind("XF86PowerOff", hl.dsp.exec_cmd("dms ipc call powermenu toggle"))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
+-- hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
+hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd("dms ipc call settings toggle"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
@@ -307,8 +311,10 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Multimedia keys
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("noctalia msg volume-up 5"), { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("noctalia msg volume-down 5"),      { locked = true, repeating = true })
+--hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("noctalia msg volume-up 5"), { locked = true, repeating = true })
+--hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("noctalia msg volume-down 5"),      { locked = true, repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("dms ipc call audio increment 5"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("dms ipc call audio decrement 5"),      { locked = true, repeating = true })
 -- Requires playerctl
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl --player=spotify,vlc,%any next"),       { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl --player=spotify,vlc,%any play-pause"), { locked = true })
@@ -430,6 +436,12 @@ hl.window_rule({
     size = {"(monitor_w*0.2)", "(monitor_h*0.2)"},
     match = { title = "Picture-in-Picture" },
 })
+
+-- DMS-RULE: id=dms-floating-windows, name=DMS Floating Windows
+hl.window_rule({ match = { class = "^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$" }, float = true })
+
+-- DMS-RULE: id=dms-window-opaque, name=DMS Window Opaque
+hl.window_rule({ match = { class = "^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$" }, opaque = true })
 
 hl.layer_rule({
     match = { namespace = "waybar" },

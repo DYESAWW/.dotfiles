@@ -1,0 +1,45 @@
+{
+  "amdGpuMonitor": {
+    "enabled": true,
+    "updateInterval": "2000",
+    "popoutStyle": "alt",
+    "minimumWidth": false
+  },
+  "nixMonitor": {
+    "enabled": true,
+    "gcThresholdGB": 100,
+    "showGenerations": false,
+    "showStoreSize": false,
+    "updateInterval": 600
+  },
+  "quickCapture": {
+    "enabled": true,
+    "postNotification": "notification",
+    "skipConfirm": true,
+    "color_palette_preset": "catppuccin",
+    "catppuccin_variant": "mocha",
+    "includeCursor": true,
+    "resetLastRegion": true,
+    "modalDisplayMode": "modal",
+    "modalScaleToContent": false,
+    "autoMinimize": false,
+    "regionHudScale": "off"
+  },
+  "emojiLauncher": {
+    "enabled": true
+  },
+  "networkIndicator": {
+    "enabled": true,
+    "updateInterval": 2,
+    "displayMode": "separate",
+    "displayUnit": "auto",
+    "checkConnectivity": false
+  },
+  "screenCaptureToolbar": {
+    "enabled": true,
+    "captureMode": "interactive",
+    "mediaMode": "photo",
+    "isVideoMode": false,
+    "stdout": false
+  }
+}
