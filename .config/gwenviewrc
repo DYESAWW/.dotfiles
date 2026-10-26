@@ -14,26 +14,26 @@ ThumbnailSplitterSizes=508,127
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-xe761z.jpg
-File10[$e]=$HOME/Pictures/Screenshots/20261026-111402-region.png
-File2[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-yq2mll.jpg
-File3[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-yqe51l.png
-File4[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-z8wj6y.png
-File5[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-zpzjlj.jpg
-File6[$e]=$HOME/Pictures/wallpapers/favorite/yoru-asa.jpg
-File7[$e]=$HOME/opsys2026/images/praktikum7/SCR-20261020-smpt.png
-File8[$e]=$HOME/opsys2026/images/praktikum7/SCR-20261020-taqp.png
-File9[$e]=$HOME/.cache/zen/5xmrxiza.Default Profile/cache2/entries/0FE7D2837DB0905C1F244B11F077D1B0584017E8
-Name1[$e]=wallhaven-xe761z.jpg
-Name10[$e]=20261026-111402-region.png
-Name2[$e]=wallhaven-yq2mll.jpg
-Name3[$e]=wallhaven-yqe51l.png
-Name4[$e]=wallhaven-z8wj6y.png
-Name5[$e]=wallhaven-zpzjlj.jpg
-Name6[$e]=yoru-asa.jpg
-Name7[$e]=SCR-20261020-smpt.png
-Name8[$e]=SCR-20261020-taqp.png
-Name9[$e]=0FE7D2837DB0905C1F244B11F077D1B0584017E8
+File1[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-yq2mll.jpg
+File10[$e]=$HOME/Pictures/Screenshots/20261026-213741.png
+File2[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-yqe51l.png
+File3[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-z8wj6y.png
+File4[$e]=$HOME/Pictures/wallpapers/favorite/wallhaven-zpzjlj.jpg
+File5[$e]=$HOME/Pictures/wallpapers/favorite/yoru-asa.jpg
+File6[$e]=$HOME/opsys2026/images/praktikum7/SCR-20261020-smpt.png
+File7[$e]=$HOME/opsys2026/images/praktikum7/SCR-20261020-taqp.png
+File8[$e]=$HOME/.cache/zen/5xmrxiza.Default Profile/cache2/entries/0FE7D2837DB0905C1F244B11F077D1B0584017E8
+File9[$e]=$HOME/Pictures/Screenshots/20261026-111402-region.png
+Name1[$e]=wallhaven-yq2mll.jpg
+Name10[$e]=20261026-213741.png
+Name2[$e]=wallhaven-yqe51l.png
+Name3[$e]=wallhaven-z8wj6y.png
+Name4[$e]=wallhaven-zpzjlj.jpg
+Name5[$e]=yoru-asa.jpg
+Name6[$e]=SCR-20261020-smpt.png
+Name7[$e]=SCR-20261020-taqp.png
+Name8[$e]=0FE7D2837DB0905C1F244B11F077D1B0584017E8
+Name9[$e]=20261026-111402-region.png
 
 [SideBar]
 InformationSplitterSizes=214,253

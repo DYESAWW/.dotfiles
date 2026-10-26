@@ -90,7 +90,7 @@
           "launcherLogoColorOverride": "",
           "launcherLogoCustomPath": "/home/DYESAW/.local/share/icons/nix-snowflake.png",
           "overflowMode": "section",
-          "launcherLogoSizeOffset": -8
+          "launcherLogoSizeOffset": -2
         },
         {
           "id": "nixMonitor",
@@ -124,7 +124,8 @@
           "mediaStyle": "controls",
           "overflowMode": "bar",
           "mediaAdaptiveWidthEnabled": true,
-          "audioScrollMode": "nothing"
+          "audioScrollMode": "nothing",
+          "mediaShowCoverArt": true
         },
         {
           "id": "colorPicker",
@@ -191,8 +192,8 @@
           "enabled": true
         }
       ],
-      "spacing": 10,
-      "innerPadding": 1,
+      "spacing": 8,
+      "innerPadding": 3,
       "bottomGap": 0,
       "transparency": 0,
       "widgetTransparency": 1,
@@ -221,7 +222,7 @@
       "useOverlayLayer": false,
       "maximizeDetection": true,
       "widgetStyle": "pills",
-      "iconScale": 1.2,
+      "iconScale": 1,
       "barLengthMode": "full",
       "widgetOutlineEnabled": true,
       "widgetOutlineOpacity": 0.65,
@@ -229,7 +230,7 @@
       "attachToScreenEdge": false,
       "maximizeWidgetIcons": false,
       "barLengthPadding": 0,
-      "barInsetPadding": -1,
+      "barInsetPadding": 6,
       "shadowIntensity": 0,
       "shadowOpacity": 60,
       "maximizeWidgetText": false,
@@ -812,5 +813,61 @@
       "all"
     ]
   },
-  "osdMediaVolumeEnabled": false
+  "osdMediaVolumeEnabled": false,
+  "cursorSettings": {
+    "theme": "Ellen-Joe",
+    "size": 24,
+    "niri": {
+      "hideWhenTyping": false,
+      "hideAfterInactiveMs": 0
+    },
+    "hyprland": {
+      "hideOnKeyPress": false,
+      "hideOnTouch": false,
+      "inactiveTimeout": 0
+    },
+    "dwl": {
+      "cursorHideTimeout": 0
+    },
+    "mango": {
+      "cursorHideTimeout": 0
+    }
+  },
+  "dashCards": [
+    {
+      "id": "calendar",
+      "w": 6,
+      "h": 5,
+      "col": 0,
+      "row": 0
+    },
+    {
+      "id": "media",
+      "w": 2,
+      "h": 1,
+      "col": 0,
+      "row": 5
+    },
+    {
+      "id": "sysmon",
+      "w": 2,
+      "h": 1,
+      "col": 2,
+      "row": 5
+    },
+    {
+      "id": "disk",
+      "w": 1,
+      "h": 1,
+      "col": 4,
+      "row": 5
+    },
+    {
+      "id": "weather",
+      "w": 1,
+      "h": 1,
+      "col": 5,
+      "row": 5
+    }
+  ]
 }

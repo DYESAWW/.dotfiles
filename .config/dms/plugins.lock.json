@@ -16,10 +16,6 @@
     "networkIndicator": {
       "repo": "https://github.com/gemb0-0/Network-Indicator.git",
       "commit": "7f5062350532495063e6c281e947d90cfecbeb37"
-    },
-    "nixMonitor": {
-      "repo": "https://github.com/antonjah/nix-monitor",
-      "commit": "ef3db9d5a525ddf41355e8c456b40d56480a6626"
     }
   }
 }
